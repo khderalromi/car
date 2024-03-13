@@ -18,3 +18,31 @@
 .SecyionType .Img{
     height: 30%;
 }
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .SecyionType p{
+        font-size: 30px;
+    }
+
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .SecyionType p{
+        font-size: 20px;
+    }
+
+}
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .SecyionType p{
+        font-size: 15px;
+    }
+    
+
+}
+

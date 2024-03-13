@@ -42,3 +42,12 @@
    
 }
 
+
+.selected_slide{
+    opacity: 0.5;
+}
+
+.slide{
+    width: 25%;
+    opacity: 0.5s;
+}
