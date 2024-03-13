@@ -1,0 +1,32 @@
+
+{
+    "cars": [
+        {"img":"Audi",
+         "Name":"Audi",
+         "Type":"Audi RS E-tron",
+         "Power":"61500 cc",
+         "Price":"250 $"
+        },
+        {"img":"BMW",
+         "Name":"BMW",
+         "Type":"BMW X2 Coupe SUV",
+         "Power":"5100 cc",
+         "Price":" 200$"
+
+        },
+        {"img":"Honda",
+         "Name":"Honda",
+         "Type":"Honda Rs.1.82 Crore",
+         "Power":"6000 cc",
+         "Price":" 220$"
+        },
+        
+        {"img":"Volvo",
+         "Name":"Volvo",
+         "Type":"Volvo 90.90 Lakh",
+         "Power":"6200 cc",
+         "Price":" 180$"
+        }
+       
+    ]
+}

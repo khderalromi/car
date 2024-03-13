@@ -1,0 +1,46 @@
+.background{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    z-index: -5;
+    
+}
+.DeatailsBage{
+    height: 100vh;
+}
+.slider{
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 5;
+}
+.Details{
+    z-index: 5;
+}
+.slider img{
+    width: 15%;
+    height: 80%;
+    border-radius: 10PX;
+    background-color: rgba(0, 0, 0, 0.6);
+  
+}
+
+
+.icon{
+    height: 80%;
+    width: 5%;
+    align-self: center;
+}
+
+.selected_slide{
+    opacity: 0.5;
+}
+
+.slide{
+    width: 25%;
+    opacity: 0.5s;
+}

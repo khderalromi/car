@@ -1,0 +1,65 @@
+.Button {
+    background-color: rgba(151, 110, 114, 0.6) ;
+    Padding : 10px 30px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 1000px;
+    font-family: "Righteous", sans-serif;
+    border: 0px;
+    
+}
+
+.Details{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(151, 110, 114, 1);
+}
+.add{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(151, 110, 114, 1);
+    font-size: 15px;
+    padding: 4px 10px;
+
+}
+
+.buy{
+    font-size: 15px;
+    padding: 4px 10px; 
+}
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .Button{
+        padding: 7px 10px;
+        font-size: 18px;
+    }
+    .buy,.add{
+        font-size: 10px;
+    }
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .Button{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .buy,.add{
+        font-size: 8px;
+    }
+}
+
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .Button{
+        padding: 3px 10px;
+        font-size: 8px;
+    }
+    .buy,.add{
+        font-size: 8px;
+    }
+}

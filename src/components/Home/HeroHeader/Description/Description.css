@@ -1,0 +1,40 @@
+/***styling for description paragraph "The culmimination of......"***/
+.Description {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28.56px;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .Description{
+        font-size: 9px;
+        line-height: 12px;
+    }
+}
+    
+    
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .Description{
+        font-size: 7px;
+        line-height: 10px;
+    }
+}
+
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .Description{
+        font-size: 6px;
+        line-height: 8px;
+    }
+}

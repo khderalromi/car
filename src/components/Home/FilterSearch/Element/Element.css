@@ -1,0 +1,73 @@
+/******styling for big titles in filter search******/
+Strong{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40.98px;
+    letter-spacing: 0.1px;
+}
+
+
+/********styling for some explain under big title in filter search********/
+.paragraph{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33.98px;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.31);
+    margin: 0;
+
+}
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    Strong{
+        font-size: 16px;
+    }
+    
+    
+     .paragraph{
+        font-size: 13px;
+      
+    
+    }
+}
+
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    Strong{
+        font-size: 12px;
+    }
+    
+     .paragraph{
+        font-size: 9px;
+    }
+}
+
+
+
+/*******responsive for screen (450px to 500px)***********/
+@media (min-width:450px) and (max-width:500px) {
+    Strong{
+        font-size: 11px;
+    }
+    
+     .paragraph{
+        font-size: 8px;
+    }
+}
+
+
+/*******responsive for screen (450px and less)***********/
+@media (max-width:450px) {
+    Strong{
+        font-size: 8px;
+    }
+    
+     .paragraph{
+        font-size: 5px;
+    }
+}

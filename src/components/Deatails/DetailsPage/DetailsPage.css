@@ -1,0 +1,319 @@
+.Main{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 80vh;
+    margin: 5% 5%;
+    
+}
+.left{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+.left h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    height: 5%;
+
+}
+.left p{
+    font-family: "Righteous", sans-serif;
+    font-size: 27px;
+    color: rgba(151, 110, 114, 1);
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    height: 5%;
+
+}
+
+.left img{
+    width: 70%;
+    height: 70%;
+    align-self: flex-end;
+}
+.right{
+    width: 25%;
+}
+.right h3{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: 0.10000000149011612px;
+    color: rgba(0, 0, 0, 0.77);
+    text-align: left;
+    height: 5%;
+
+}
+.right .explain{
+    height: 95%;
+
+}
+.right .explain .rating{
+    font-family: "Righteous", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.77);
+    margin: 25% 0 0 0;
+}
+
+.right .explain .star{
+    color: rgba(151, 110, 114, 1);
+}
+.Description h3, .Description p{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+.Description h3{
+    margin-bottom: 0;
+}
+.Description p{
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.explain .color h3{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+.explain .color .circle .circle1,
+.explain .color .circle .circle2,
+.explain .color .circle .circle3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    border: 2px solid rgba(151, 110, 114, 1);
+}
+
+.explain .color .circle .circle1{
+    background-color:rgba(255, 255, 255, 1) ;
+}
+
+.explain .color .circle  .circle2{
+    background-color:rgba(0, 0, 0, 1) ;
+}
+
+.explain .color .circle  .circle3{
+    background-color: rgba(103, 153, 213, 1);
+}
+
+.explain .color .circle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.explain .Price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.explain .Price .addsub{
+    width: 40%;
+    margin: 30% 0 0 0 ;
+}
+.explain .Price .addsub .sub{
+    background-color:rgba(255, 255, 255, 1);
+    border: 1px slid rgba(151, 110, 114, 1);
+    color:rgba(151, 110, 114, 1);
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.explain .Price .addsub .add{
+    background-color: rgba(151, 110, 114, 1);;
+    border: 1px slid rgba(255, 255, 255, 1);
+    color:rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.explain .Price .addsub span{
+    margin: 0 10%;
+    font-size: 22px;
+}
+
+.explain .Price h3{
+    font-family: "Righteous", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    margin: 20% 0 0 0 ;
+
+}
+.explain .Price h3 span{
+    color: rgba(151, 110, 114, 1);
+}
+
+.explain .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4%;
+}
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .left h2{
+        font-size: 25px;
+    }
+    .left p{
+        font-size: 17px;
+    }
+    .right h3{
+        font-size: 15px;
+    }
+    .right .explain .rating{
+        font-size: 12px;
+    }
+    .Description h3{
+        font-size: 15px;
+    }
+    .Description p{
+        font-size: 11px;
+    }
+    
+    .explain .color h3{
+        font-size: 15px;
+    }
+    .explain .color .circle .circle1,
+    .explain .color .circle .circle2,
+    .explain .color .circle .circle3{
+        width: 20px;
+        height: 20px;
+    }
+    .explain .Price .addsub .sub,
+    .explain .Price .addsub .add{
+        padding: 3%;
+    }
+    .explain .Price .addsub span{
+        font-size: 15px;
+    }
+
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .left h2{
+        font-size: 20px;
+    }
+    .left p{
+        font-size: 13px;
+    }
+    .right h3{
+        font-size: 12px;
+    }
+    .right .explain .rating{
+        font-size: 10px;
+    }
+    .Description h3{
+        font-size: 12px;
+    }
+    .Description p{
+        font-size: 9px;
+    }
+    
+    .explain .color h3{
+        font-size: 12px;
+    }
+    .explain .color .circle .circle1,
+    .explain .color .circle .circle2,
+    .explain .color .circle .circle3{
+        width: 15px;
+        height: 15px;
+    }
+    .explain .Price .addsub .sub,
+    .explain .Price .addsub .add{
+        padding: 1%;
+    }
+    .explain .Price .addsub{
+        margin: 40% 0 0 0 ;
+    }
+    .explain .Price .addsub span{
+        font-size: 9px;
+    
+    }
+    .explain .Price h3{
+        font-size: 12px;
+    }
+
+
+}
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .left h2{
+        font-size: 15px;
+    }
+    .left p{
+        font-size: 10px;
+    }
+    .right h3{
+        font-size: 9px;
+    }
+    .right .explain .rating{
+        font-size: 8px;
+    }
+    .right .explain .star{
+        font-size: 8px;
+    }
+    .Description h3{
+        font-size: 10px;
+    }
+    .Description p{
+        font-size: 8px;
+    }
+    
+    .explain .color h3{
+        font-size: 10px;
+    }
+    .explain .color .circle .circle1,
+    .explain .color .circle .circle2,
+    .explain .color .circle .circle3{
+        width: 10px;
+        height: 10px;
+    }
+    .explain .Price .addsub .sub,
+    .explain .Price .addsub .add{
+        padding: 1%;
+    }
+    .explain .Price .addsub{
+        display: none;
+    }
+    .explain .Price .addsub span{
+        font-size: 8px;
+    
+    }
+    .explain .Price h3{
+        font-size: 10px;
+    }
+
+
+
+}

@@ -1,0 +1,37 @@
+.MakeEveryDay{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 0.1px;
+    margin:0 auto auto auto;
+
+
+}
+
+
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .MakeEveryDay{
+        font-size: 35px;
+    }
+}
+    
+    
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .MakeEveryDay{
+        font-size: 25px;
+    }
+}
+
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .MakeEveryDay{
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,57 @@
+/*******styling for all filter search area******/
+.FilterSearch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 9% 5%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-radius: 77px;
+    box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.2) ;
+
+}
+
+
+/******** styling for element in filter search without button********/
+.allElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+/***** styling for  button search ****/
+.FilterSearch .Search{
+    
+    align-self: center;
+}
+
+
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .FilterSearch{
+        padding: 20px 30px;
+    }
+}
+
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .FilterSearch{
+        padding: 10px 20px;
+    }
+}
+
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .FilterSearch{
+        padding: 0px 20px;
+    }
+}
