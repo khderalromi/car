@@ -3,7 +3,7 @@ import classes from './ImgGroup.css'
 import img1 from '../../../assests/images/Rectangle1.png';
 import img2 from '../../../assests/images/Rectangle2.png';
 import img3 from '../../../assests/images/Rectangle3..png';
-import img4 from '../../../assests/images/Rectangle4.png';
+import img4 from '../../../assests/images/Rectangle1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCaretRight,faCaretLeft } from 
 '@fortawesome/free-solid-svg-icons';
