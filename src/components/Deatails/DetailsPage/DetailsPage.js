@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
+import { useContext } from "react";
+import { ContextInfo } from "../../../App";
 import Audi from '../../../assests/images/one.png';
 import Honda from '../../../assests/images/tow.png';
 import BMW from '../../../assests/images/three.png';
@@ -9,7 +11,89 @@ import {  faStar,faStarHalf,faAdd,faSubtract } from
 '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+
 const Deatils=(props)=>{
+
+    const [quantities,setquantities]=useState(1);
+    const [colorCar,setColor]=useState("");
+    const {Info,setInfo} =useContext(ContextInfo);
+
+    /*******function to handle increse and decrease quantities ********/
+    const increaseQuantities= ()=>{
+        return (
+            setquantities(quantities+1)
+        )
+    }
+
+
+    const decreaseQuantities= ()=>{
+        {quantities<=1 ?  null: setquantities(quantities-1) }  
+    }
+    /******* end function to handle increse and decrease quantities ********/
+
+
+    
+    /*******function to handle color of car********/
+    const HandleColor= (color)=>{
+        return (
+            setColor(color)
+        )
+    }
+    /******* end function to handle color of car ********/
+
+    
+
+    /*********info handler to add element to cart *****/
+    const InfoHandler=()=>{
+       
+        const repeat= Info.find((car)=>{
+            
+            return(car.name ===props.name)
+        })
+
+        const repeat2 = Info.filter( (car)=>(car.name==props.name));
+        if(repeat2.length>0){
+            const repeatColor=repeat2.find((car)=>{
+                return (car.color==colorCar)
+            })
+            if(repeatColor){
+                return (repeatColor.quantities=repeatColor.quantities+quantities);
+            }
+            else{
+                const myCart={
+                    img:props.img,
+                    price:props.price ,
+                    type:props.type,
+                    power:props.power,
+                    name:props.name,
+                    quantities:quantities,
+                    color:colorCar
+                    
+                }
+                return (setInfo([...Info,myCart]));
+            }
+        }
+
+        else{
+                const myCart={
+                    img:props.img,
+                    price:props.price ,
+                    type:props.type,
+                    power:props.power,
+                    name:props.name,
+                    quantities:quantities,
+                    color:colorCar
+                    
+                }
+            
+                return (setInfo([...Info,myCart]));
+        }
+               
+    }
+    
+
+    
 
     return (
         <div className={classes.Main}>
@@ -44,9 +128,17 @@ const Deatils=(props)=>{
                     <div className={classes.color}>
                         <h3>Colors</h3>
                         <div className={classes.circle}>
-                            <div className={classes.circle1}></div>
-                            <div className={classes.circle2}></div>
-                            <div className={classes.circle3}></div>
+                            <div className={classes.circle1}
+                             onClick={()=>{HandleColor("White")}}>
+                        </div>
+
+                            <div className={classes.circle2}
+                             onClick={()=>{HandleColor("Black")}}>    
+                            </div>
+
+                            <div className={classes.circle3}
+                             onClick={()=>{HandleColor("SkyBlue")}}>
+                            </div>
                         </div>
                         
 
@@ -54,16 +146,25 @@ const Deatils=(props)=>{
 
                     <div className={classes.Price} >
                         <div className={classes.addsub}>
-                            <FontAwesomeIcon className={classes.sub} icon={faSubtract}/>
-                            <span>1</span>
-                            <FontAwesomeIcon className={classes.add} icon={faAdd}/>
+                            <FontAwesomeIcon className={classes.sub}
+                             icon={faSubtract}
+                             onClick={()=>{decreaseQuantities()}}
+                             />
+                            <span>{quantities}</span>
+                            <FontAwesomeIcon className={classes.add}
+                             icon={faAdd}
+                             onClick={()=>{increaseQuantities()}}
+                             />
                         </div>
                         
                         <h3><span>Price:</span>{props.price}</h3>
 
                     </div>
                     <div className={classes.btn}>
-                        <Button btnType='add'>Add To Cart</Button>
+                        <div onClick={()=>{InfoHandler()}}>
+                            <Button btnType='add'>Add To Cart</Button>
+                        </div>
+                        
                         <Button btnType='buy' >Buy Now</Button>
                     </div>
 

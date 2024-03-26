@@ -1,0 +1,48 @@
+.SecyionType{
+    width: 90%;
+    height: 300px;
+    margin: 5% 5%;
+    
+}
+
+.SecyionType p{
+    height: 70%;
+    font-size: 50px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    line-height: 85.68px;
+    letter-spacing: 0.1pz;
+    text-align: center;
+}
+
+.SecyionType .Img{
+    height: 30%;
+}
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .SecyionType p{
+        font-size: 30px;
+    }
+
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .SecyionType p{
+        font-size: 20px;
+    }
+
+}
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .SecyionType p{
+        font-size: 15px;
+    }
+    
+
+}
+

@@ -1,0 +1,43 @@
+.Categories{
+    width: 90%;
+    margin: 10% 5%;
+ 
+}
+
+.Categories .title{
+    font-size: 50px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    line-height: 85.68px;
+    letter-spacing: 0.1pz;
+    text-align: center;
+}
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .Categories .title{
+        font-size: 30px;
+    }
+
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .Categories .title{
+        font-size: 20px;
+    }
+
+}
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .Categories .title{
+        font-size: 15px;
+    }
+    
+
+}
+
+

@@ -1,0 +1,119 @@
+
+.GridCard{
+    display: grid;
+    grid-template-columns: repeat(2,calc(96% / 2));
+    grid-template-rows: 45% 45%;
+    align-content: flex-start;
+    row-gap: 10%;
+    column-gap: 4%;
+    
+    
+}
+
+.Card{
+    width: 80%;
+    justify-self: center;
+    
+}
+
+
+.Card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.Explain{
+    display: flex;
+    flex-direction: column;
+}
+.Explain strong{
+    font-size: 40px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    line-height: 78.23px;
+    letter-spacing: 0.1pz;
+    text-align: center;
+}
+
+.properties{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.properties span{
+    font-size: 15px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 300;
+    line-height: 37.5px;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.77);
+}
+
+.StartingAt p{
+    font-size: 35px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    line-height: 45.7px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button .Details{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(151, 110, 114, 1);
+}
+
+
+
+/*****styling for responsive design**********/
+@media (min-width:700px) and (max-width:1025px) {
+    .Explain strong{
+        font-size: 30px;
+    }
+    .properties span{
+        font-size:15px;
+    }
+    .StartingAt p{
+        font-size: 20px;
+    }
+    
+
+}
+
+/*******responsive for screen (500px to 700px)***********/
+@media (min-width:500px) and (max-width:700px) {
+    .Explain strong{
+        font-size: 25px;
+    }
+    .properties span{
+        font-size:10px;
+    }
+    .StartingAt p{
+        font-size: 15px;
+    }
+    
+
+
+}
+
+
+/*******responsive for screen (500px and less)***********/
+@media (max-width:500px) {
+    .Explain strong{
+        font-size: 15px;
+    }
+    .properties span{
+        font-size:8px;
+    }
+    .StartingAt p{
+        font-size: 10px;
+    }
+
+}

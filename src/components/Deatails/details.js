@@ -48,37 +48,6 @@ class Details extends Component{
             this.setState({index:myindex})
         }
 
-        HandleCart=(index)=>{
-            const price=data.cars.find((car)=>{
-                return (car.Name===this.state.images[index].name)}).Price
-            const type=data.cars.find((car)=>{
-                    return (car.Name===this.state.images[index].name)}).Type
-            const power=data.cars.find((car)=>{
-                    return (car.Name===this.state.images[index].name)}).Power
-                   
-            const myCart={
-                img:this.state.images[index],
-                price:price,
-                type:type,
-                power:power
-            }  
-            this.setState({cart: [...this.state.cart ,myCart]})
-            console.log(this.state.cart)
-             for (let i = 0; i < this.state.cart.length; i++) {
-                const myInfo=this.state.cart[i].price;
-                this.setState({info:[...this.state.info,myInfo]})
-                
-                
-
-                
-            }
-            
-            return(
-            
-            
-               null 
-            )
-        }
     render(){
         
         return(
@@ -92,7 +61,9 @@ class Details extends Component{
                             return (car.Name===this.state.images[this.state.index].name)}).Type}
                         power={data.cars.find((car)=>{
                             return (car.Name===this.state.images[this.state.index].name)}).Power}
-                        img={this.state.images[this.state.index].img}    
+                        img={this.state.images[this.state.index].img} 
+                        name={this.state.images[this.state.index].name} /*you can export this name from data.json too*/
+                         
                             
                 />
                 

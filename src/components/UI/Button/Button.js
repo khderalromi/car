@@ -8,9 +8,14 @@ const button=(props) => {
         
         <button
         className={[classes.Button , classes[props.btnType]].join(' ')}
-        onClick={()=>{return (navigate(props.routeName))}}
-        
-                    >{props.children}</button>
+                onClick={()=>{return(
+                    <div>
+                    {(navigate(props.routeName))}
+                    </div>
+                
+                )
+                }}>
+        {props.children}</button>
     )};
 
 export default button;

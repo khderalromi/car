@@ -69,33 +69,29 @@
     color: rgba(0, 0, 0, 0.75);
 }
 
+.CookiesIcon{
+    color: rgba(151, 110, 114, 1) ;
+}
 
+.alert{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
 
 
 /*****styling for responsive design**********/
-@media (min-width:700px) and (max-width:1025px) {
-    .product .explain h2{
-        font-size: 15px;
-    }
-    .product .explain p,.price,.color,.delete{
-        font-size: 11px;
-    }
-    .main .title{
-        font-size: 50px;
-    }
-
-}
 
 /*******responsive for screen (500px to 700px)***********/
 @media (min-width:500px) and (max-width:700px) {
-    .product .explain h2{
-        font-size: 12px;
-    }
-    .product .explain p,.price,.color,.delete{
-        font-size: 9px;
-    }
-    .main .title{
-        font-size: 35px;
+    .alert{
+        font-size: 18px;
     }
 
 
@@ -104,15 +100,7 @@
 
 /*******responsive for screen (500px and less)***********/
 @media (max-width:500px) {
-    .product .explain h2{
+    .alert{
         font-size: 10px;
     }
-    .product .explain p,.price,.color,.delete{
-        font-size: 7px;
-    }
-    .main .title{
-        font-size: 25px;
-    }
-
-
 }
